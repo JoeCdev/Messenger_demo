@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise :users
+  devise_for :users
 
   resources :conversations, only: [:index, :show, :destroy]
 
